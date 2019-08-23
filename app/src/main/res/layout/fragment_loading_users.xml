@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:layout_marginRight="15.5dp"
+            android:layout_marginLeft="15.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sortText"
+                android:text="@string/saved_users"
+                android:layout_marginTop="17dp"
+                android:textColor="@color/tab_textview_color"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_weight="1"
+                android:layout_marginTop="13.5dp"
+                android:id="@+id/recycle_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/no_user_text"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:text="@string/there_is_no_users"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>

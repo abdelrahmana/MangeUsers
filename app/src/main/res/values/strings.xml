@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">UserInfo</string>
+    <string name="add_new_user">إضافة مستخدم</string>
+    <string name="show_users">عرض المستخدمين</string>
+    <string name="heeder_title_toolbar">Manage Users</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">إضافة</string>
+    <string name="username">الأسم</string>
+    <string name="kind_woman">أنثى</string>
+    <string name="man">ذكر</string>
+    <string name="kind">النوع</string>
+    <string name="age">العمر</string>
+    <string name="job_title">الوظيفة</string>
+    <string name="btn_message_dialog">حسناً</string>
+    <string name="write_yourname">من فضلك أدخل الأسم الخاص بك</string>
+    <string name="write_age">من فضلك أدخل العمر الخاص بك</string>
+    <string name="write_job_title">من فضلك أدخل الوظيفة الخاصة بك</string>
+    <string name="successfully_added">تمت إضافة المستخدم بنجاح</string>
+    <string name="failed">لم نتمكن من إضافة المستخدم ربما قمت بإضافته من قبل . لايمكن إضافة اسم شخص مرتين</string>
+    <string name="error">حدث خطأ أثناء الإضافة برجاء المحاولة مرة أخرى</string>
+    <string name="there_is_no_users">لايوجد هناك أى مستخدمين مسجلين من قبل</string>
+    <string name="saved_users">قائمة المستخدمين</string>
+    <string name="user_name">الأسم : </string>
+    <string name="year">سنة</string>
+    <string name="age_header">العمر : </string>
+    <string name="please_wait">برجاء الإنتظار جارى الإضافة</string>
+</resources>
