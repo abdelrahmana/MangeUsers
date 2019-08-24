@@ -29,7 +29,7 @@ class LoadingUsers : Fragment() {
         super.onCreate(savedInstanceState)
 
     }
-    lateinit var progressDialog : ProgressDialog
+   // lateinit var progressDialog : ProgressDialog
     var arrayListOfPlans : ArrayList<User> = ArrayList<User>()
     lateinit var recycleViewUsers: RecyclerView
     lateinit var recycleAdaptor : RecycleAdaptorUsers
@@ -42,14 +42,14 @@ class LoadingUsers : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_loading_users, container, false)
-        progressDialog = ProgressDialog(activity!!)
+       // progressDialog = ProgressDialog(activity!!)
         // national id of user
         setAllViews(view)
         db = DatabaseClass.getAppDatabase(context!!)//invoke(activity!!)
         model = this.run {
             ViewModelProviders.of(activity!!)[SharedViewModel::class.java]
         }
-        progressDialog.setDialog(true,activity!!.resources.getString(R.string.please_wait))
+       // progressDialog.setDialog(true,activity!!.resources.getString(R.string.please_wait))
         presenter = DataBaseInitializerPresnter(model!!)
         presenter!!.populateAsync(db!!,getUsers) // get users // overloading methods
         viewModelObserver()
@@ -63,7 +63,7 @@ class LoadingUsers : Fragment() {
 
     private fun viewModelObserver() {
         model!!.users.observe(this, Observer<List<User>> { taskSuccess ->
-            progressDialog.setDialog(false, "") // hide dialog
+          //  progressDialog.setDialog(false, "") // hide dialog
             if (taskSuccess != null) { // it is empty
                 arrayListOfPlans = taskSuccess as ArrayList<User>
                 setAdaptorWithThisArrayList()
